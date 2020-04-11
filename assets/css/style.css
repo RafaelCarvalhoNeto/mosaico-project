@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    font-family: 'Ropa Sans', sans-serif;
+}
+header{
+    height: 100vh;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: rgba(0,0,0,0.5);
+    overflow: hidden;
+    color: #fff;
+}
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    height: 100%;
+}
+div{
+    
+}
+header>p{
+    padding: 30px;
+    margin: 0 0 70px 0;
+    font-size: 0.7em;
+}
+header div p{
+    letter-spacing: 0.2em;
+    font-family:  'Squada One', cursive;
+}
+header div p:first-child{
+    padding-top: 35px;
+}
+header div p:first-child, header div p:nth-child(3){
+    font-size: 2em;
+    font-weight: 700;
+}
+header div p:nth-child(2){
+    font-size: 8em;
+    font-weight: 700;
+    position: relative;
+}
+header div p:nth-child(4){
+    font-size: 0.9em;
+    letter-spacing: 0.1em;
+    width: 55%;
+    margin: 20px auto ;
+    padding: 20px;
+        border: 0.7px solid #fff;
+    text-transform: initial;
+    position: relative;
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+header div p:nth-child(4)::before{
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-color: #fff;
+    /*border-style: solid;*/
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    border-top: 3px solid #fff;
+    border-left: 3px solid #fff;
+}
+header div p:nth-child(4)::after{
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-color: #fff;
+    /*border-style: solid;*/
+    box-sizing: border-box;
+    bottom: 0;
+    right: 0;
+    border-bottom: 3px solid #fff;
+    border-right: 3px solid #fff;
+}
+#scrollDown {
+    position: relative;
+    top: 250px;
+    text-transform: uppercase;
+    border: none;
+    font-size: 0.8em;
+    color: #fff;
+}
+#scrollDown::after {
+    content: "\02C7";
+    font-size: 9em;
+    font-weight: lighter;
+    position: absolute;
+    font-family: monospace;
+    top: 5px;
+    left: 20px;
+    transition: top 0.3s ease-in-out;
+}
+#scrollDown:hover::after {
+    top: 10px;
+}
+main{
+    background-color: #fff;
+    width: 100vw;
+    height: 100vh;
+}
