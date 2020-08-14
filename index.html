@@ -5,111 +5,136 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Moisaco</title>
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Ropa+Sans&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Squada+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.12.0/css/all.css" integrity="sha384-ekOryaXPbeCpWQNxMwSWVvQ0+1VrStoPJq54shlYhR8HzQgig1v5fas6YgOqLoKz" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Mansalva&family=Roboto&family=Ubuntu:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap" rel="stylesheet">
+
+
 </head>
 <body>
-    <header>
-        <p>Rafael Carvalho | 10.04.2020</p>
+    <header class="capa">
         <video autoplay muted loop id="myVideo" src="./assets/img/naestrada.mp4" type="video/mp4"></video>
-        <div>
-            <p>Fazendo uma</p>
-            <p>Aventura</p>
-            <p>pelo mundo</p>
-            <p class="box">O mundo desbravado por qualquer um que não acredita em limites</p>
-            <a id="scrollDown" href="#meumain">scroll to explore</a>
+        <div class="infos-capa">
+            <p>Conheça o mundo</p>
+            <p>um lugar</p>
+            <p>de cada vez!</p>
+            <p class="box">Um mosaico construido por qualquer um que não acredita em limites</p>
+            <form action="#" class="search">
+                <input type="text" placeholder="Escolha um país">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+        <div class='conheca'>
+            <a id="scrollDown" href="#meumain">conheça mais</a>
         </div>
     </header>
     <main id="meumain">
-        <h2>Fotos</h2>
-        <section class="quadrado">
-            <div class="miniquad">
-                <div class="dm">
-                   <div class="des"><div class="des"><div class="des"><div class="des"></div></div></div></div>
-                </div>
-                <div class="dm" style="background-image: url(./assets/img/moldura.png)">
-                    <div class="des molde">Egito 2019</div>
-                </div>
-            </div>
-            <div class="miniquad">
-                <div class="dm">
-                    <img class="foto" src="./assets/img/image917.png" alt="">
-                    <p class="leg">Pirâmides</p>
-                </div>
-            </div>
-            <div class="miniquad">
-                <div class="dm"></div>
-                <div class="dm"></div>
-            </div>
-            <div class="miniquad">
-                <div class="dm">
-                    <img class="foto" src="./assets/img/cerva.png" alt="">
-                    <p class="leg">Cerveja</p>
-                </div>           
-            </div>
-            <div class="miniquad">
-                <div class="dm">
-                    <p class="text">#Egito</p>
-                </div>
-                <div class="dm">
-                    <div class="dm2"><img class="foto" src="./assets/img/foto.png" alt=""></div>
-                    <div class="dm2"><p class="text">Viagem emocionante!</p></div>
-                </div>
-            </div>
-            <div class="miniquad">
-                <div class="dm">
-                    <img class="foto" src="./assets/img/image917.png" alt="">
-                    <p class="leg">Pirâmides</p>
-                </div>
-            </div>
-            <div class="miniquad">
-                <div class="dm"></div>
-                <div class="dm"></div>
-            </div>
-            <div class="miniquad">
-                <div class="dm">
-                    <img class="foto" src="./assets/img/image917.png" alt="">
-                    <p class="leg">Pirâmides</p>
-                </div>
-            </div>
-            <div class="miniquad">
-                <div class="dm"></div>
-                <div class="dm">
-                    <div class="dm2"></div>
-                    <div class="dm2"></div>
-                </div>
-            </div>
-        </section>
-        
-        <h2>Album</h2>
-        <section class="album">
-            <div>
-                <p class="tit">Foto1</p>
-                <img src="./assets/img/cerva2.png" alt="">
-                <p class="comentario">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-            <div>
-                <p class="tit">Foto2</p>
-                <img src="./assets/img/cerva2.png" alt="">
-                <p class="comentario">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-            <div>
-                <p class="tit">Foto3</p>
-                <img src="./assets/img/cerva2.png" alt="">
-                <p class="comentario">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-            <div>
-                <p class="tit">Foto4</p>
-                <img src="./assets/img/cerva2.png" alt="">
-                <p class="comentario">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
 
+        <section class="container primary">
+            <div class="sobre">
+
+                <div class="titulo">
+                    <h2 class="white">O que é o Mosaic</h2>
+                </div>
+                <div class="conteudo">
+                    <p class="white">Mosaico é um projeto que nasceu a partir da paixão de viajar e explorar. Mas principalmente nasceu da vontade de compartilhar o que vivemos por aí. Ao longo dos nossos planejamentos, sempre sentiamos falta de ter uma visão mais clara, de como é determinado lugar. Daí veio a ideias de fazer videos, dos lugares mais sugeridos, feitos por viajantes, com suas visões. Com isso vamos construindo um mosaico do mundo, que estará disponível para quem quiser ver um pouco mais de lugares fascinantes que existem por aí.</p>
+    
+                </div>
+
+            </div>
+            <div class="div"></div>
+
+            <div class="titulo">
+                <h2 class="white">Como funciona?</h2>
+            </div>
+            <div class="conteudo">
+                <div class="block">
+                    <p class="avatar"><i class="fas fa-map-signs white"></i></p>
+                    <p class="info white">Você entra na plataforma e algum lugar que tenha interesse em conhecer ou já conhece. Lá estarão listadas as missões</p>
+                    </p>
+                </div>
+                <div class="block">
+                    <p class="avatar"><i class="fas fa-film white"></i></i></p>
+                    <p class="info white">Explore o conteúdo disponível ou compartilhe conosco os vídeos que você fez em determinado lugar. Quanto mais pessoas compartilharem, mas lugares conseguimos destravar e conhecer</p>
+                    </p>
+                </div>
+                <div class="block">
+                    <p class="avatar"><i class="fas fa-photo-video white"></i></p>
+                    <p class="info white">Compartilhe e conheça mais sobre o que esse mundo tem de melhor!  </p>
+                    </p>
+                </div>
+
+
+            </div>
         </section>
+        <section class="back">
+            <div class='gradiente'>
+                <div class="titulo">
+                    <h2 class="white">Nos ajude a construir esse mosaico</h2>
+                </div>
+                <div class="conteudo">
+                    <div class="block">
+                        <p class="info white">Nada mais fácil do que explorar o nosso site para conhecer melhor! Explore o mundo e conheça um pouco melhor diversos lugares sem sair de casa!</p>
+                        </p>
+                    </div>
+                </div>
+                <div class="btn">
+                    <a>Conheça as missões</a>
+
+                </div>
+
+            </div>
+        </section>
+        <hr>
+        <section class="container">
+            <div class="titulo">
+                <h2>Cidades exploradas até o momento</h2>
+            </div>
+            <div class="conteudo">
+                <div class="block">
+                    <p class="cidades">Cidades</p>
+                    <ul class="lista">
+                        <li>San Francisco</li>
+                        <li>Paris</li>
+                        <li>Bordeaux</li>
+                        <li>Valleta</li>
+                        <li>São Paulo</li>
+                        <li>Rio de Janeiro</li>
+                    </ul>
+                </div>
+
+                <div class="block">
+                    <p class="cidades">Países</p>
+                    <ul class="lista">
+                        <li>Brasil</li>
+                        <li>Estados Unidos</li>
+                        <li>Malta</li>
+                        <li>França</li>
+                        <li>Itália</li>
+                        <li>Argentina</li>
+                    </ul>
+                </div>
+
+                <div class="block">
+                    <p class="cidades">Lugares</p>
+                    <ul class="lista">
+                        <li>Pier 39</li>
+                        <li>MASP</li>
+                        <li>Cristo Redentor</li>
+                        <li>Champs Elysées</li>
+                        <li>Camiñito</li>
+                        <li>Blue Grotto</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
 
         
     </main>
     <footer>
-        <p>Rafael Carvalho <sup><small>&copy;</small></sup> | <a href="https://github.com/RafaelCarvalhoNeto" target="_blank" rel="noopener" title="Acesse meu perfil no github">github</a> | <a href="https://www.linkedin.com/in/rafaelcarvalhoneto/" target="_blank" rel="noopener" title="Acesse meu perfil no linkedin">linkedin</a> | <a href="mailto:rafaelcarvalhonet@gmail.com?subject=Quero%20te%20contratar" title="Entre em contato comigo por e-mail">rafaelcarvalhoneto@gmail.com</a> | <a href="tel: +5511981961614" title="Entre em contato comigo por telefone">11 98196 1614</a> | São Paulo</p>
+        <p>Rafael Carvalho <sup><small>&copy;</small></sup> | <a href="https://github.com/RafaelCarvalhoNeto" target="_blank" rel="noopener" title="Acesse meu perfil no github">github</a> | <a href="https://www.linkedin.com/in/rafaelcarvalhoneto/" target="_blank" rel="noopener" title="Acesse meu perfil no linkedin">linkedin</a> | <a href="mailto:rafaelcarvalhonet@gmail.com?subject=Quero%20te%20contratar" title="Entre em contato comigo por e-mail">rafaelcarvalhoneto@gmail.com</a></p>
         
     </footer>
 </body>
