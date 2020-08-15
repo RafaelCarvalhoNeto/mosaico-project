@@ -12,7 +12,7 @@
     font-family: 'Roboto', sans-serif;
     list-style: none;
 }
-header{
+.capa{
     height: 100vh;
     text-transform: uppercase;
     text-align: center;
@@ -33,31 +33,31 @@ header{
     background-size: cover; 
     
 }
-header>p{
+.capa>p{
     padding: 30px;
     margin: 0 0 70px 0;
     font-size: 0.5m;
 }
-header div p{
+.capa div p{
     letter-spacing: 0.1em;
 }
-header div p:first-child{
+.capa div p:first-child{
     padding-top: 35px;
 }
-header div p:first-child, header div p:nth-child(3){
+.capa div p:first-child, .capa div p:nth-child(3){
     font-size: 1.2em;
     font-weight: 700;
     font-family: 'Lora', serif;
 }
 
-header div p:nth-child(2){
+.capa div p:nth-child(2){
     font-size: 3em;
     font-weight: 700;
     position: relative;
     line-height: 50px;
     font-family: 'Lora', serif;
 }
-header div p:nth-child(4){
+.capa div p:nth-child(4){
     font-size: 0.8em;
     letter-spacing: 0.1em;
     width: 90vw;
@@ -156,7 +156,7 @@ footer p {
     color: white;
 }
 .container{
-    padding: 50px 50px;
+    padding: 50px 30px;
     color: #000;
 
 }
@@ -180,7 +180,10 @@ footer p {
     width: 100%;
     align-items: center;
     margin: 10px 0;
+    padding: 30px 15px;
 }
+
+
 .avatar{
     font-size: 3em;
     width: 100px;
@@ -193,6 +196,16 @@ footer p {
     justify-content: center;
     margin-bottom: 20px;
 }
+.block:nth-child(2){
+    background-color: white;
+}
+.block:nth-child(2) .avatar, .block:nth-child(2) .info{
+    color: var(--primary-color);
+}
+.block:nth-child(2) .avatar{
+    border: 1px solid var(--primary-color);
+}
+
 .cidades{
     font-weight: 700;
     margin-bottom: 10px;
@@ -235,10 +248,17 @@ hr{
     display: flex;
     justify-content: center;
     margin-top: 30px;
-    transition: background-color 0.5s ease;
+
 }
-.gradiente .btn:hover{
-    background-color: rgb(201, 85, 72);
+.gradiente .btn, .search button{
+    transition: background-color 0.4s ease;
+}
+
+.gradiente .btn:hover, .search button:hover{
+    background-color:  rgb(7, 124, 75);
+}
+.gradiente .block{
+    padding:0;
 }
 .sobre{
     margin-bottom: 20px;
@@ -251,29 +271,102 @@ hr{
     background-size: contain;
 }
 
+.nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+    padding: 20px 30px;
+}
+.nav .logo{
+    font-size: 1.3em;
+    color: white;
+    font-family: 'Lora', serif;
+}
+.nav-cat{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-item{
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+section .galeria {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    margin: 0 auto;
+}
+.galeria .imagem{
+    flex: 1 1 30%;
+    min-width: 200px;
+    position: relative;
+    overflow: hidden;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+    transition: transform 0.6s;
+}
+.imagem:hover img{
+    transform: translateY(-50px);
+}
+
+.legenda{
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: transform 0.6s, opacity 0.1s 0.3s;
+}
+.imagem:hover .legenda{
+    opacity: 1;
+    transform: translateY(0);
+    transition: transform 0.6s, opacity 0.1s;
+}
+
+.lugares h1{
+    font-family: 'Lora', serif;
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
 
 @media only screen and (min-width: 769px) {
     main h2{
         font-size: 3em;
     }
 
-    header>p{
+    .capa>p{
         padding: 30px;
         margin: 0 0 70px 0;
         font-size: 0.7em;
     }
-    header div p:first-child{
+    .capa div p:first-child{
         padding-top: 35px;
     }
-    header div p:first-child, header div p:nth-child(3){
+    .capa div p:first-child, .capa div p:nth-child(3){
         font-size: 2em;
         font-weight: 700;
     }
-    header div p:nth-child(2){
+    .capa div p:nth-child(2){
         font-size: 8em;
         line-height: 120px;
     }
-    header div p:nth-child(4){
+    .capa div p:nth-child(4){
         font-size: 0.9em;
         width: 100%;
     }
@@ -297,6 +390,16 @@ hr{
     .back{
         background-position-y: -150px;
    
+    }
+
+    .nav{
+        padding: 20px 100px;
+    }
+    .nav .logo{
+        font-size: 1.3em;
+    }
+    .nav-item{
+        margin: 0 10px;
     }
     
 }
