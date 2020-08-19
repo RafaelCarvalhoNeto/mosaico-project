@@ -1,16 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Moisaco</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.12.0/css/all.css" integrity="sha384-ekOryaXPbeCpWQNxMwSWVvQ0+1VrStoPJq54shlYhR8HzQgig1v5fas6YgOqLoKz" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Mansalva&family=Roboto&family=Ubuntu:wght@400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap" rel="stylesheet">
-
-
-</head>
+<?php require_once("./inc/head.php");?>
 <body>
     <header class="capa">
         <video autoplay muted loop id="myVideo" src="./assets/img/naestrada.mp4" type="video/mp4"></video>
@@ -19,7 +7,7 @@
             <p>um lugar</p>
             <p>de cada vez!</p>
             <p class="box">Um mosaico construido por qualquer um que não acredita em limites</p>
-            <form action="cidades.html" class="search">
+            <form action="lugar.php" class="search">
                 <input type="text" placeholder="Escolha um país" name="search">
                     <button type="submit"><i class="fas fa-search"></i></button>
             </form>
@@ -133,9 +121,6 @@
 
         
     </main>
-    <footer>
-        <p>Rafael Carvalho <sup><small>&copy;</small></sup> | <a href="https://github.com/RafaelCarvalhoNeto" target="_blank" rel="noopener" title="Acesse meu perfil no github">github</a> | <a href="https://www.linkedin.com/in/rafaelcarvalhoneto/" target="_blank" rel="noopener" title="Acesse meu perfil no linkedin">linkedin</a> | <a href="mailto:rafaelcarvalhonet@gmail.com?subject=Quero%20te%20contratar" title="Entre em contato comigo por e-mail">rafaelcarvalhoneto@gmail.com</a></p>
-        
-    </footer>
-</body>
-</html>
+
+    
+<?php require_once("./inc/footer.php");?>
